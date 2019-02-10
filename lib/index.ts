@@ -1,7 +1,7 @@
-import Query from "./query";
-import Mutation from "./mutation";
+import Query from "./Query";
+import Mutation from "./Mutation";
 
-export = {
+export default  {
     query: Query,
     mutation: Mutation
 }; 

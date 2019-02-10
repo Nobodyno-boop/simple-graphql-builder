@@ -1,7 +1,7 @@
-import Query from "./query";
-import Mutation from "./mutation";
+import Query from "./Query";
+import Mutation from "./Mutation";
 declare const _default: {
     query: typeof Query;
     mutation: typeof Mutation;
 };
-export = _default;
+export default _default;
