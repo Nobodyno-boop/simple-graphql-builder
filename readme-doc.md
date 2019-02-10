@@ -2,6 +2,8 @@
 
 Welcome to the Graphql-builder **Documentation**
 
+> npm i -D graphql-builder
+
 
 ### Query
 
