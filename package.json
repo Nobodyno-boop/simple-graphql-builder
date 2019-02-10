@@ -5,9 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublish": "rm -r dist && mkdir dist && ",
-    "docs": "typedoc --readme readme-doc.md --out docs/ lib ",
-    "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs/"
+    "prepublish": "rm -r dist && mkdir dist && tsc",
+    "docs": "typedoc --readme readme-doc.md --out docs/ lib "
   },
   "repository": {
     "type": "git",
