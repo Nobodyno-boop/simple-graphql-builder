@@ -29,7 +29,7 @@ export default class Mutation {
      */
     constructor(name: string, args: object = {___null:null}){
         this.name = name;
-        if(args["___null"]){
+        if(args["___null"] == null){
             this.args = null;
         } else this.args = args; 
     }

@@ -26,9 +26,9 @@ class Query {
      * @param name The name of the query
      * @param args The args of the query by default no value
      */
-    constructor(name, args = {}) {
+    constructor(name, args = { ___null: null }) {
         this.name = name;
-        if (args == {}) {
+        if (args["___null"] == null) {
             this.args = null;
         }
         else
