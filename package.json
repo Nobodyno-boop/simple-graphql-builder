@@ -1,0 +1,35 @@
+{
+  "name": "graphql-builder",
+  "version": "0.1.0",
+  "description": "A simple graphql builder",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "rm -r dist && mkdir dist && ",
+    "docs": "typedoc --readme readme-doc.md --out docs/ lib ",
+    "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poulpinounette/graphql-request.git"
+  },
+  "keywords": [
+    "graphql",
+    "builder",
+    "graphql-builder",
+    "octopus"
+  ],
+  "author": "Poulpi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Poulpinounette/graphql-request/issues"
+  },
+  "homepage": "https://github.com/Poulpinounette/graphql-request#readme",
+  "dependencies": {
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "typedoc": "^0.14.2"
+  }
+}
