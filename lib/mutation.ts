@@ -27,9 +27,9 @@ export default class Mutation {
      * @param name The name of the query 
      * @param args The args of the query by default no value
      */
-    constructor(name: string, args: object = {}){
+    constructor(name: string, args: object = {___null:null}){
         this.name = name;
-        if(args == {}){
+        if(args["___null"]){
             this.args = null;
         } else this.args = args; 
     }
