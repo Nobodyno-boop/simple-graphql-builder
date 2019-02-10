@@ -6,24 +6,24 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "rm -r dist && mkdir dist && tsc",
-    "docs": "typedoc --readme readme-doc.md --out docs/ lib "
+    "docs": "typedoc --mode file --readme readme-doc.md --out docs/ lib "
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Poulpinounette/graphql-builder.git"
+    "url": "git+https://github.com/Poulpinounette/simple-graphql-builder.git"
   },
   "keywords": [
     "graphql",
     "builder",
-    "graphql-builder",
+    "simple-graphql-builder",
     "octopus"
   ],
   "author": "Poulpi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Poulpinounette/graphql-builder/issues"
+    "url": "https://github.com/Poulpinounette/simple-graphql-builder/issues"
   },
-  "homepage": "https://github.com/Poulpinounette/graphql-builder#readme",
+  "homepage": "https://github.com/Poulpinounette/simple-graphql-builder#readme",
   "dependencies": {
     "typescript": "^3.3.3"
   },

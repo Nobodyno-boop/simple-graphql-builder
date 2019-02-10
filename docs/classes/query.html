@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Mutation | simple-grahpql-builder</title>
+	<title>Query | simple-grahpql-builder</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_mutation_.html">&quot;mutation&quot;</a>
-				</li>
-				<li>
-					<a href="_mutation_.mutation.html">Mutation</a>
+					<a href="query.html">Query</a>
 				</li>
 			</ul>
-			<h1>Class Mutation</h1>
+			<h1>Class Query</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Mutation</span>
+						<span class="target">Query</span>
 					</li>
 				</ul>
 			</section>
@@ -84,22 +81,22 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_mutation_.mutation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="query.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_mutation_.mutation.html#args" class="tsd-kind-icon">args</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_mutation_.mutation.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_mutation_.mutation.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="query.html#args" class="tsd-kind-icon">args</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="query.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="query.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_mutation_.mutation.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_mutation_.mutation.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="query.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="query.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,28 +108,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Mutation<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_mutation_.mutation.html" class="tsd-signature-type">Mutation</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Query<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="query.html" class="tsd-signature-type">Query</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/e256d0e/lib/mutation.ts#L4">mutation.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/4f28223/lib/query.ts#L4">query.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Simple exemple with no data</p>
 								</div>
-								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> mutation = <span class="hljs-keyword">new</span> Mutation(<span class="hljs-string">"sign_up"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
+								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"login"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
 
 <span class="hljs-comment">//But not interest to make that...</span></code></pre>
 								<p>Simple exemple with sample data</p>
-								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> mutation = <span class="hljs-keyword">new</span> Mutation(<span class="hljs-string">"sign_up"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>}).get([<span class="hljs-string">"pseudo"</span>, <span class="hljs-string">"id"</span>]);
+								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"login"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>}).get([<span class="hljs-string">"pseudo"</span>, <span class="hljs-string">"id"</span>]);
 
-<span class="hljs-comment">// mutation.toString() is equal to :</span>
-<span class="hljs-comment">// mutation {</span>
-<span class="hljs-comment">//   sign_up(email: "randommail@mail.fr", password:"secretPassword"){</span>
+<span class="hljs-comment">// query.toString() is equal to :</span>
+<span class="hljs-comment">// query {</span>
+<span class="hljs-comment">//   login(email: "randommail@mail.fr", password:"secretPassword"){</span>
 <span class="hljs-comment">//       pseudo, id</span>
 <span class="hljs-comment">//   }</span>
 <span class="hljs-comment">// }</span></code></pre>
@@ -156,7 +153,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_mutation_.mutation.html" class="tsd-signature-type">Mutation</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="query.html" class="tsd-signature-type">Query</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -169,7 +166,7 @@
 					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/e256d0e/lib/mutation.ts#L4">mutation.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/4f28223/lib/query.ts#L4">query.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/e256d0e/lib/mutation.ts#L3">mutation.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/4f28223/lib/query.ts#L3">query.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/e256d0e/lib/mutation.ts#L2">mutation.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/4f28223/lib/query.ts#L2">query.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,41 +197,39 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="_mutation_.mutation.html" class="tsd-signature-type">Mutation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_mutation_.mutation.html" class="tsd-signature-type">Mutation</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="query.html" class="tsd-signature-type">Query</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/e256d0e/lib/mutation.ts#L76">mutation.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/4f28223/lib/query.ts#L75">query.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Sample use</p>
 								</div>
-								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> mutation = <span class="hljs-keyword">new</span> Mutation(<span class="hljs-string">"sign_up"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
- mutation.get([<span class="hljs-string">"id"</span>, <span class="hljs-string">"pseudo"</span>, <span class="hljs-string">"credits"</span>]);
+								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"login"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
+ query.get([<span class="hljs-string">"id"</span>, <span class="hljs-string">"pseudo"</span>, <span class="hljs-string">"credits"</span>]);
 
-<span class="hljs-comment">// mutation.toString() is equal to :</span>
-<span class="hljs-comment">// mutation {</span>
-<span class="hljs-comment">//   sign_up(email: "randommail@mail.fr", password:"secretPassword"){</span>
+<span class="hljs-comment">// query.toString() is equal to :</span>
+<span class="hljs-comment">// query {</span>
+<span class="hljs-comment">//   login(email: "randommail@mail.fr", password:"secretPassword"){</span>
 <span class="hljs-comment">//       id, pseudo, credits</span>
 <span class="hljs-comment">//   }</span>
 <span class="hljs-comment">// }</span>
 </code></pre>
 								<p>Some Sample</p>
-								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> mutation = <span class="hljs-keyword">new</span> Mutation(<span class="hljs-string">"shop_buy"</span>, {ShopUserID: <span class="hljs-number">1</span>});
- <span class="hljs-keyword">let</span> shop = <span class="hljs-keyword">new</span> Mutation(<span class="hljs-string">"response"</span>).get([<span class="hljs-string">"isOK"</span>, {items: [<span class="hljs-string">"name"</span>, <span class="hljs-string">"price"</span>]}]) <span class="hljs-comment">// is equal to {response: "isOK"}</span>
- mutation.get(shop);
+								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"shop_show"</span>, {ShopUserID: <span class="hljs-number">1</span>});
+ <span class="hljs-keyword">let</span> shop = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"response"</span>).get([<span class="hljs-string">"shopName"</span>, {items: [<span class="hljs-string">"name"</span>, <span class="hljs-string">"price"</span>]}]) <span class="hljs-comment">// is equal to {response: "isOK"}</span>
+ query.get(shop);
 
-
-
-<span class="hljs-comment">// mutation.toString() is equal to :</span>
-<span class="hljs-comment">// mutation {</span>
-<span class="hljs-comment">//   shop_buy(ShopUserID: 1){</span>
+<span class="hljs-comment">// query.toString() is equal to :</span>
+<span class="hljs-comment">// query {</span>
+<span class="hljs-comment">//   shop_show(ShopUserID: 1){</span>
 <span class="hljs-comment">//       response{</span>
-<span class="hljs-comment">//           isOk,</span>
+<span class="hljs-comment">//           shopName,</span>
 <span class="hljs-comment">//           items{</span>
 <span class="hljs-comment">//               name, price</span>
 <span class="hljs-comment">//           }</span>
@@ -245,11 +240,11 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <a href="_mutation_.mutation.html" class="tsd-signature-type">Mutation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></h5>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_mutation_.mutation.html" class="tsd-signature-type">Mutation</a></h4>
-							<p>Return the Mutation instance</p>
+							<h4 class="tsd-returns-title">Returns <a href="query.html" class="tsd-signature-type">Query</a></h4>
+							<p>Return the Query instance</p>
 						</li>
 					</ul>
 				</section>
@@ -263,24 +258,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/e256d0e/lib/mutation.ts#L85">mutation.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/Poulpinounette/graphql-request/blob/4f28223/lib/query.ts#L80">query.ts:80</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> q: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p><strong>please dont touch</strong></p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p><strong>please dont touch</strong></p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span>
@@ -298,41 +285,35 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_mutation_.html">"mutation"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_query_.html">"query"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="mutation.html" class="tsd-kind-icon">Mutation</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_mutation_.mutation.html" class="tsd-kind-icon">Mutation</a>
+					<li class="current tsd-kind-class">
+						<a href="query.html" class="tsd-kind-icon">Query</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_mutation_.mutation.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="query.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_mutation_.mutation.html#args" class="tsd-kind-icon">args</a>
+								<a href="query.html#args" class="tsd-kind-icon">args</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_mutation_.mutation.html#data" class="tsd-kind-icon">data</a>
+								<a href="query.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_mutation_.mutation.html#name" class="tsd-kind-icon">name</a>
+								<a href="query.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_mutation_.mutation.html#get" class="tsd-kind-icon">get</a>
+								<a href="query.html#get" class="tsd-kind-icon">get</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_mutation_.mutation.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+								<a href="query.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>

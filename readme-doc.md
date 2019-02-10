@@ -1,6 +1,6 @@
-# Graphql-builder
+# simple-graphql-builder
 
-Welcome to the Graphql-builder **Documentation**
+Welcome to the simple-graphql-builder **Documentation**
 
 > npm i -D simple-grahpql-builder
 
