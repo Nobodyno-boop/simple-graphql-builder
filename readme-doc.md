@@ -2,7 +2,7 @@
 
 Welcome to the simple-graphql-builder **Documentation**
 
-> npm i -D simple-grahpql-builder
+> npm i simple-graphql-builder
 
 
 ### Query
