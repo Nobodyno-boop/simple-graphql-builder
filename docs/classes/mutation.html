@@ -70,7 +70,20 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Mutation</span>
+						<a href="mutation.html" class="tsd-signature-type">Mutation</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Mutation</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="mutation.html" class="tsd-signature-type">Mutation</a>
+									</li>
+									<li>
+										<a href="query.html" class="tsd-signature-type">Query</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -81,7 +94,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="mutation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="mutation.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
@@ -90,13 +103,15 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mutation.html#args" class="tsd-kind-icon">args</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mutation.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mutation.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mutation.html#request" class="tsd-kind-icon">request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="mutation.html#str" class="tsd-kind-icon">str</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mutation.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="mutation.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="mutation.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="mutation.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,23 +119,25 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Mutation<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mutation.html" class="tsd-signature-type">Mutation</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mutation<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mutation.html" class="tsd-signature-type">Mutation</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="mutation.html">Mutation</a>.<a href="mutation.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in Mutation.ts:4</li>
+									<li>Defined in Request.ts:8</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Simple exemple with no data</p>
 								</div>
+								<h1 id="mutation">Mutation</h1>
 								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> mutation = <span class="hljs-keyword">new</span> Mutation(<span class="hljs-string">"sign_up"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
 
 <span class="hljs-comment">//But not interest to make that...</span></code></pre>
@@ -130,6 +147,21 @@
 <span class="hljs-comment">// mutation.toString() is equal to :</span>
 <span class="hljs-comment">// mutation {</span>
 <span class="hljs-comment">//   sign_up(email: "randommail@mail.fr", password:"secretPassword"){</span>
+<span class="hljs-comment">//       pseudo, id</span>
+<span class="hljs-comment">//   }</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+								<h1 id="query">Query</h1>
+								<p>Simple exemple with no data</p>
+								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"login"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
+
+<span class="hljs-comment">//But not interest to make that...</span></code></pre>
+								<p>Simple exemple with sample data</p>
+								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"login"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>}).get([<span class="hljs-string">"pseudo"</span>, <span class="hljs-string">"id"</span>]);
+
+<span class="hljs-comment">// query.toString() is equal to :</span>
+<span class="hljs-comment">// query {</span>
+<span class="hljs-comment">//   login(email: "randommail@mail.fr", password:"secretPassword"){</span>
 <span class="hljs-comment">//       pseudo, id</span>
 <span class="hljs-comment">//   }</span>
 <span class="hljs-comment">// }</span></code></pre>
@@ -145,7 +177,10 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> args: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{___null:-1}</span></h5>
+									<h5>request: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> args: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{ ___null: -1 }</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The args of the query by default no value</p>
@@ -166,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Mutation.ts:4</li>
+							<li>Defined in Request.ts:7</li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Mutation.ts:3</li>
+							<li>Defined in Request.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -186,28 +221,50 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Mutation.ts:2</li>
+							<li>Defined in Request.ts:4</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="request" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> request</h3>
+					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Request.ts:6</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="str" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> str</h3>
+					<div class="tsd-signature tsd-kind-icon">str<span class="tsd-signature-symbol">:</span> <a href="str.html" class="tsd-signature-type">Str</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Request.ts:8</li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="mutation.html" class="tsd-signature-type">Mutation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mutation.html" class="tsd-signature-type">Mutation</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="mutation.html">Mutation</a>.<a href="mutation.html#get">get</a></p>
 								<ul>
-									<li>Defined in Mutation.ts:76</li>
+									<li>Defined in Request.ts:150</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
+									<h1 id="mutation">Mutation</h1>
 									<p>Sample use</p>
 								</div>
 								<pre><code class="language-typescript"> <span class="hljs-keyword">let</span> mutation = <span class="hljs-keyword">new</span> Mutation(<span class="hljs-string">"sign_up"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
@@ -238,6 +295,36 @@
 <span class="hljs-comment">//       }</span>
 <span class="hljs-comment">//   }</span>
 <span class="hljs-comment">// }</span></code></pre>
+								<h1 id="query">Query</h1>
+								<p>Sample use</p>
+								<pre><code class="language-typescript">
+ <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"login"</span>, {email: <span class="hljs-string">"randommail@mail.fr"</span>, password:<span class="hljs-string">"secretPassword"</span>});
+ query.get([<span class="hljs-string">"id"</span>, <span class="hljs-string">"pseudo"</span>, <span class="hljs-string">"credits"</span>]);
+
+<span class="hljs-comment">// query.toString() is equal to :</span>
+<span class="hljs-comment">// query {</span>
+<span class="hljs-comment">//   login(email: "randommail@mail.fr", password:"secretPassword"){</span>
+<span class="hljs-comment">//       id, pseudo, credits</span>
+<span class="hljs-comment">//   }</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+								<p>Some Sample</p>
+								<pre><code class="language-typescript">
+ <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"shop_show"</span>, {ShopUserID: <span class="hljs-number">1</span>});
+ <span class="hljs-keyword">let</span> shop = <span class="hljs-keyword">new</span> Query(<span class="hljs-string">"response"</span>).get([<span class="hljs-string">"shopName"</span>, {items: [<span class="hljs-string">"name"</span>, <span class="hljs-string">"price"</span>]}]) <span class="hljs-comment">// is equal to {response: "isOK"}</span>
+ query.get(shop);
+
+<span class="hljs-comment">// query.toString() is equal to :</span>
+<span class="hljs-comment">// query {</span>
+<span class="hljs-comment">//   shop_show(ShopUserID: 1){</span>
+<span class="hljs-comment">//       response{</span>
+<span class="hljs-comment">//           shopName,</span>
+<span class="hljs-comment">//           items{</span>
+<span class="hljs-comment">//               name, price</span>
+<span class="hljs-comment">//           }</span>
+<span class="hljs-comment">//       }</span>
+<span class="hljs-comment">//   }</span>
+<span class="hljs-comment">// }</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -250,17 +337,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>q<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>q<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">String</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="mutation.html">Mutation</a>.<a href="mutation.html#tostring">toString</a></p>
 								<ul>
-									<li>Defined in Mutation.ts:85</li>
+									<li>Defined in Request.ts:161</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -282,7 +370,7 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span>
 								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">string</span>
+								<span class="tsd-signature-type">String</span>
 							</h4>
 						</li>
 					</ul>
@@ -304,7 +392,7 @@
 					<li class="current tsd-kind-class">
 						<a href="mutation.html" class="tsd-kind-icon">Mutation</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="mutation.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -316,10 +404,16 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="mutation.html#name" class="tsd-kind-icon">name</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="mutation.html#request" class="tsd-kind-icon">request</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="mutation.html#str" class="tsd-kind-icon">str</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="mutation.html#get" class="tsd-kind-icon">get</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="mutation.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
@@ -328,6 +422,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="query.html" class="tsd-kind-icon">Query</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="str.html" class="tsd-kind-icon">Str</a>
 					</li>
 				</ul>
 			</nav>

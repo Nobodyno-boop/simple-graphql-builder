@@ -1,8 +1,7 @@
-export default class Mutation {
-    private name;
-    private data;
-    private args;
+import Request from "./Request";
+export default class Mutation extends Request {
     /**
+     *  # Mutation
      * Simple exemple with no data
      *
      * ```typescript
@@ -24,14 +23,9 @@ export default class Mutation {
      * // }
      * ```
      *
-     * @param name The name of the query
-     * @param args The args of the query by default no value
-     */
-    constructor(name: string, args?: object);
-    /**
-     * Sample use
-     *
+     * # Query
      * ```typescript
+     *
      *  let mutation = new Mutation("sign_up", {email: "randommail@mail.fr", password:"secretPassword"});
      *  mutation.get(["id", "pseudo", "credits"]);
      *
@@ -65,14 +59,9 @@ export default class Mutation {
      * //   }
      * // }
      * ```
-     * @param obj
-     * @return Return the Mutation instance
-     */
-    get(obj: Mutation | any[] | object): Mutation;
-    /**
      *
-     * @param q **please dont touch**
-     * @param args **please dont touch**
+     * @param name The name of the query
+     * @param args The args of the query by default no value
      */
-    toString(q?: boolean, args?: any): string | undefined;
+    constructor(name: string, args?: object);
 }

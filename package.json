@@ -1,10 +1,11 @@
 {
   "name": "simple-graphql-builder",
-  "version": "0.1.13",
+  "version": "0.1.20",
   "description": "A simple graphql builder",
   "module": "lib/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "rm -r dist && mkdir dist && tsc",
     "docs": "typedoc --mode file --readme readme-doc.md --out docs/ lib "

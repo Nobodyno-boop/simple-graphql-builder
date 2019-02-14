@@ -17,20 +17,31 @@ Welcome to the simple-graphql-builder **Documentation**
 > Please goto [[Mutation.get]] to see some sample to use the Mutation Builder.
 
 
-### Use
+# Use
+
+
+## Module 
+
+```javascript
+
+    let request = require("simple-graphql-builder")
+
+
+    let query =  new query.Query(...);
+    let query =  new query.Mutation(...);
+
+```
+
+## Typescript
 
 ```typescript
-    import request from "simple-grahpql-builder"
-
-    let query = new request.Query(...)
-
-    let mutation = new request.mutation(...)
+    import {Query, Mutation} from "simple-graphql-builder"
 
 
 
-    query.toString() // to parse
+    let q:Query = new Query(...);
 
-    mutation.toString() // to parse
 
+    let m:Mutation = new Mutation(...);
 
 ```
