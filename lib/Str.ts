@@ -1,5 +1,6 @@
 export default class Str {
     private str: string;
+    
     constructor(){
         this.str = "";
     }
