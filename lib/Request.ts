@@ -193,14 +193,18 @@ export default class Mutation {
                 str.append(this.data.toString(true, this.data));
             } else if (typeof this.data == "object") {
                 let t = new Str();
-                for (const key in args) {
-                    if (args.hasOwnProperty(key)) {
-                        let element = args[key];
+                for (const key in this.data) {
+                    if (this.data.hasOwnProperty(key)) {
+                        let element = this.data[key];
                         if (Array.isArray(element)) {
-                            t.append(`${key}, {`)
+                            t.append(`${key} {`)
                             for (let i = 0; i < element.length; i++) {
                                 let el = element[i];
-                                t.append(`${el},`)
+                                if(i+1 == element.length){
+                                    t.append(`${el}`)             
+                                } else {
+                                    t.append(`${el},`)
+                                }
                             }
                             t.append(`},`)
                         }
@@ -232,10 +236,15 @@ export default class Mutation {
                     if (args.hasOwnProperty(key)) {
                         let element = args[key];
                         if (Array.isArray(element)) {
-                            t.append(`${key}, {`)
+                            t.append(`${key} {`)
                             for (let i = 0; i < element.length; i++) {
                                 let el = element[i];
-                                t.append(`${el},`)
+                                if(i+1 == element.length){
+                                    t.append(`${el}`)             
+                                } else {
+                                    t.append(`${el},`)
+                                }
+
                             }
                             t.append(`},`)
                         }
